@@ -125,6 +125,7 @@ public class Socio {
         this.numeroCarne = numeroCarne;
     }
 }
+<img width="652" height="292" alt="diagrama de clases drawio" src="https://github.com/user-attachments/assets/74dbb7fc-cf8f-4c9e-81a3-daf26dc4d01c" />
 
 
 
