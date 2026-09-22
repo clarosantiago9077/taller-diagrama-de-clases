@@ -1,3 +1,7 @@
+
+SANTIAGO CLARO AGUDELO Y MIGUEL ÁNGEL BLANDÓN ZULUAGA 
+
+
 # taller-diagrama-de-clases
 PARTE 1 - TEORICA
 1. Escribe el símbolo UML de cada visibilidad: público, privado, protegido y de paquete :   Público: + ,Privado: - ,Protegido: # ,Paquete: ~
@@ -82,6 +86,45 @@ public class Punto implements Dibujable {
 }
 
 Parte 3 — Modelado autónomo
+
+LIBRO.java
+
+public class Libro {
+    String titulo;
+    String autor;
+
+    public Libro(String titulo, String autor) {
+        this.titulo = titulo;
+        this.autor = autor;
+    }
+}
+
+PRESTAMO.java
+
+public class Prestamo {
+    String fecha;
+    Libro libro;
+
+    public Prestamo(String fecha, Libro libro) {
+        this.fecha = fecha;
+        this.libro = libro;
+    }
+}
+
+SOCIO.java
+
+import java.util.ArrayList;
+
+public class Socio {
+    String nombre;
+    String numeroCarne;
+    ArrayList<Prestamo> prestamos = new ArrayList<>();
+
+    public Socio(String nombre, String numeroCarne) {
+        this.nombre = nombre;
+        this.numeroCarne = numeroCarne;
+    }
+}
 
 
 
